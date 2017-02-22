@@ -1,0 +1,55 @@
+body{font-family:"Microsoft YaHei"; text-align:center; width:100%; margin:0 auto; background-color:#fff; color:#fff;}
+
+@imgwidth: 100%; 
+@fontsize: 20px; 
+@bordercolor: #ccc;
+@width:50%;
+.common-box-style(@w:1px,@s:solid,@color:#f65aae){
+	border:@arguments;
+	width:@width;
+	
+}
+.dg-main{
+	.less-demo-box{
+		.common-box-style(1px,solid,#ccc);
+		
+		a{
+		
+		}
+	}
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  font-weight:500;
+  	
+	img{max-width:@imgwidth;}
+
+	.dg-main-msg{
+	  border-bottom:1px solid @bordercolor;
+	  padding-left:.6em;  padding-bottom: 1em;
+	  padding-right:.6em;
+	  
+		  h5{  
+			  color: #999;
+			  line-height: 1.8em;
+			  text-align: left;
+			  font-size: 16px;
+			  font-weight: 500;  margin: .8em 0 .3em;
+		  }
+	}
+
+	.dg-main-msg h5.dg-main-msgh5q{font-size: @fontsize; color:#333;  line-height:2em;}
+	
+	.q{
+	  display: inline-block;
+	  background-color: #47bd4f;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 5px;
+	  width: 1.8em;
+	  margin-right: .6em;
+	  font-style: normal;
+	  line-height: 1.8em;
+	}
+}
